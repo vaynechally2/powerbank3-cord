@@ -1,0 +1,49 @@
+{
+  "profiles": [
+    {
+      "name": "Sample Profile",
+      "target_url": "https://example.com",
+      "brave_path": "",
+      "refresh_interval_seconds": 5.0,
+      "schedule_mode": "interval",
+      "exact_time_hms": "12:00:00:000",
+      "clock_offset_seconds": 0.0,
+      "sync_accuracy_seconds": 0.0,
+      "detection": {
+        "mode": "text_contains",
+        "value": "Claim",
+        "case_sensitive": false,
+        "attribute_name": "",
+        "attribute_value": "",
+        "reference_image_path": "",
+        "confidence_threshold": 0.85,
+        "image_mode": "off"
+      },
+      "active_hours": {
+        "days": [0, 1, 2, 3, 4, 5, 6],
+        "start": "00:00",
+        "end": "23:59"
+      },
+      "alerts": {
+        "desktop_notification": true,
+        "play_sound": true,
+        "bring_to_front": false,
+        "copy_to_clipboard": false,
+        "manual_hotkey": "Ctrl+Alt+C",
+        "manual_confirm_click": false,
+        "overlay_enabled": true,
+        "overlay_position": "top_left",
+        "overlay_opacity": 0.92,
+        "overlay_show_profile": true,
+        "overlay_show_next_refresh": true,
+        "overlay_show_corrected_time": true
+      },
+      "cooldown_after_detection_seconds": 3.0,
+      "startup_verification_refreshes": 3,
+      "startup_verification_delay_ms": 350,
+      "log_csv": true
+    }
+  ],
+  "last_profile": "Sample Profile",
+  "telemetry_enabled": false
+}
