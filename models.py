@@ -1,8 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, asdict, field
-from datetime import time
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List
 
 
 @dataclass
@@ -65,7 +64,7 @@ class MonitoringProfile:
             target_url=data.get("target_url", "https://example.com"),
             refresh_interval_seconds=float(data.get("refresh_interval_seconds", 5.0)),
             schedule_mode=data.get("schedule_mode", "interval"),
-            exact_time_hms=data.get("exact_time_hms", "12:00:00"),
+            exact_time_hms=data.get("exact_time_hms", "12:00:00:000"),
             clock_offset_seconds=float(data.get("clock_offset_seconds", 0.0)),
             sync_accuracy_seconds=float(data.get("sync_accuracy_seconds", 0.0)),
             detection=DetectionRule(**data.get("detection", {})),
